@@ -1,0 +1,7 @@
+{
+    "event_type": "on-demand-test2",
+    "client_payload": {
+      "input1": "first input",
+      "input2": "second input"
+    }
+  }
