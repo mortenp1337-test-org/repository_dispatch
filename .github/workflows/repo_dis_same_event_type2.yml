@@ -1,0 +1,15 @@
+# workflow that takes 1 input and triggers on repository_dispatch
+
+on:
+  repository_dispatch:
+    types: [same_event_type]
+
+jobs:
+  repo_dispatch1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: repo_dispatch1
+        run: |
+          echo "repo_dispatch1"
+          echo "repo_dispatch1: ${{ github.event.client_payload.input1 }}"
+          echo "repo_dispatch1: ${{ github.event.client_payload.input2 }}"
