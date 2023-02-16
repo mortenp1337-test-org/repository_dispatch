@@ -1,7 +1,5 @@
 # workflow that takes 1 input and triggers on repository_dispatch
 
-name: repo_dispatch1
-
 on:
   repository_dispatch:
     types: [same_event_type]
